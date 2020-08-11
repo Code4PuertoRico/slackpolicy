@@ -1,0 +1,21 @@
+name: Mark stale issues and pull requests
+
+on:
+  schedule:
+  - cron: "00 00 * * *"
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/stale@v3
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        stale-issue-message: 'Este issue se a marcado como __stale__ por falta de actividad en los ultimos 30 días | This issue has been marked __stale__ because of the lack of activity in the last 30 days.'
+        stale-pr-message: 'Este pull request se a marcado como __stale__ por falta de actividad en los ultimos 30 días | This pull request has been marked __stale__ because of the lack of activity in the last 30 days.'
+        stale-issue-label: 'no-issue-activity'
+        stale-pr-label: 'no-pr-activity'
+        days-before-stale: 30
+        days-before-close: -1
