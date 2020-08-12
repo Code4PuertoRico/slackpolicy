@@ -2,7 +2,7 @@
 
 Como parte de nuestros esfuerzos en crear una comunidad abierta hemos tomado la politica de uso de Slack usada por Code for America y la hemos editado a nuestra necesidades. El proposito es establecer las expectivas de uso de este recurso y de que esta bien o mal en el.
 
-Puede leer la version en español en este enlace.
+Puede leer la version en español en [este enlace](slack-policy-es.md).
 
 ----
 
